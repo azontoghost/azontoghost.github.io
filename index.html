@@ -63,6 +63,26 @@
       text-decoration: none;
     }
 
+    /* Accessibility: High contrast focus states for keyboard navigation */
+    :focus-visible {
+      outline: 2px solid var(--cyan);
+      outline-offset: 4px;
+      border-radius: 4px;
+    }
+
+    /* Specific border-radius overrides for styled elements to match their visual shape */
+    .button:focus-visible,
+    .nav-cta:focus-visible,
+    .status:focus-visible,
+    .stack-tag:focus-visible,
+    .lang-tag:focus-visible {
+      border-radius: 999px;
+    }
+
+    .socials a:focus-visible {
+      border-radius: 10px;
+    }
+
     img {
       display: block;
       max-width: 100%;
